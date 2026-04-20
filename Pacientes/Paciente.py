@@ -5,7 +5,7 @@ class Paciente:
         self.__edad = edad
         self.__num_expediente = num_expediente
         self.__alergias = alergias
-        self.__hist_cos = hist_cons
+        self.__hist_cons = hist_cons
 
     def get_nombre(self):
         return self.__nombre
