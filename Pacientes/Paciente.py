@@ -5,7 +5,7 @@ class Paciente:
         self.__edad = edad
         self.__num_expediente = num_expediente
         self.__alergias = alergias
-        self.__hist_cons = cant_cons
+        self.__cant_cons = cant_cons
 
     def get_nombre(self):
         return self.__nombre
@@ -35,9 +35,11 @@ class Paciente:
     def info(self):
         print(f"numero de expediente del paciente: {self.__num_expediente}-nombre del paciente: {self.__nombre}-edad del paciente: {self.edad}")
 
-    def prog_cons(self,hist_cons):
+    def prog_cons(self,cant_cons):
         print("Se ha programado una nueva consulta")
+        x = 0
+        for x in cant_cons:
+            x += 1
         
-        for x in hist_cons:
             
         
