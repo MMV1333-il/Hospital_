@@ -1,11 +1,11 @@
 #Creacion de carpeta y archivo, la clase hablara sobre pacientes del hospital
 class Paciente:
-    def __init__(self,nombre,edad,num_expediente,alergias,hist_cons):
+    def __init__(self,nombre,edad,num_expediente,alergias, cant_cons = []):
         self.__nombre = nombre
         self.__edad = edad
         self.__num_expediente = num_expediente
         self.__alergias = alergias
-        self.__hist_cons = hist_cons
+        self.__hist_cons = cant_cons
 
     def get_nombre(self):
         return self.__nombre
@@ -27,10 +27,17 @@ class Paciente:
     def set_alergias(self,alergias):
         self.__alergias = alergias
 
-    def get_hist_cons(self):
-        return self.__hist_cons
-    def set_hist_cons(self,hist_cons):
-        self.__hist_cons = hist_cons
+    def get_cant_cons(self):
+        return self.__cant_cons
+    def set_cant_cons(self,cant_cons):
+        self.__cant_cons = cant_cons
     
     def info(self):
         print(f"numero de expediente del paciente: {self.__num_expediente}-nombre del paciente: {self.__nombre}-edad del paciente: {self.edad}")
+
+    def prog_cons(self,hist_cons):
+        print("Se ha programado una nueva consulta")
+        
+        for x in hist_cons:
+            
+        
