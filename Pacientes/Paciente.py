@@ -32,3 +32,5 @@ class Paciente:
     def set_hist_cons(self,hist_cons):
         self.__hist_cons = hist_cons
     
+    def info(self):
+        print(f"numero de expediente del paciente: {self.__num_expediente}-nombre del paciente: {self.__nombre}-edad del paciente: {self.edad}")
