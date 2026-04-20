@@ -7,4 +7,28 @@ class Paciente:
         self.__alergias = alergias
         self.__hist_cos = hist_cons
 
+    def get_nombre(self):
+        return self.__nombre
+    def set_nombre(self,nombre):
+        self.__nombre = nombre
+    
+    def get_edad(self):
+        return self.__edad
+    def set_edad(self,edad):
+        self.__edad = edad
+
+    def get_num_expediente(self):
+        return self.__num_expediente
+    def set_num_expediente(self,num_expediente):
+        self.__num_expediente = num_expediente
+
+    def get_alergias(self):
+        return self.__alergias
+    def set_alergias(self,alergias):
+        self.__alergias = alergias
+
+    def get_hist_cons(self):
+        return self.__hist_cons
+    def set_hist_cons(self,hist_cons):
+        self.__hist_cons = hist_cons
     
