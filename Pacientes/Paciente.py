@@ -1,0 +1,1 @@
+#Creacion de carpeta y archivo, la clase hablara sobre pacientes del hospital
