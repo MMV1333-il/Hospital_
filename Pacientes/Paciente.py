@@ -1,6 +1,6 @@
 #Creacion de carpeta y archivo, la clase hablara sobre pacientes del hospital
 class Paciente:
-    def __init__(self,nombre,edad,num_expediente,alergias, cant_cons = []):
+    def __init__(self,nombre,edad,num_expediente,alergias = [], cant_cons = []):
         self.__nombre = nombre
         self.__edad = edad
         self.__num_expediente = num_expediente
@@ -40,6 +40,8 @@ class Paciente:
         x = 0
         for x in cant_cons:
             x += 1
+        print(f"cantidad de consultas: {x}")
         
-            
+    
+
         
